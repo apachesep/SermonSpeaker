@@ -39,6 +39,7 @@ $player     = SermonspeakerHelperSermonspeaker::getPlayer($this->item);
 		</h2>
 		<?php if (in_array('sermon:speaker', $this->columns) and $this->item->speaker_title) : ?>
 			<small class="ss-speaker createdby" itemprop="author" itemscope itemtype="http://schema.org/Person">
+				<meta itemprop="url" content="<?php echo substr(JURI::root(),0,-1).JRoute::_(SermonspeakerHelperRoute::getSermonRoute($this->item->slug));?>">
 				<?php echo JText::_('COM_SERMONSPEAKER_SPEAKER'); ?>: 
 				<?php echo JLayoutHelper::render('content.speaker', array('item' => $this->item, 'params' => $this->params)); ?>
 			</small>
