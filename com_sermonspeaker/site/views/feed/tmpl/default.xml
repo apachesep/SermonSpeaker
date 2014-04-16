@@ -28,7 +28,7 @@
 				label="JGLOBAL_CHOOSE_CATEGORY_LABEL" 
 				description="JGLOBAL_CHOOSE_CATEGORY_DESC" 
 				extension="com_sermonspeaker" 
-				required="true"
+				required="true" show_root="true"
 			/>
 
 			<field name="count_items_type" type="list"
